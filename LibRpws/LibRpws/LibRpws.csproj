@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Algolia.Search" Version="5.1.0" />
+    <PackageReference Include="LiteDB" Version="4.1.4" />
+    <PackageReference Include="MySqlConnector" Version="0.45.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Serialize.Linq" Version="1.7.1" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.5.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.ThreadPool" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MailjetNet\MailjetNet\MailjetNet.csproj" />
+    <ProjectReference Include="..\..\AspCommon\src\Microsoft.Extensions.Primitives\Microsoft.Extensions.Primitives.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Abstractions\Microsoft.AspNetCore.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Extensions\Microsoft.AspNetCore.Http.Extensions.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Features\Microsoft.AspNetCore.Http.Features.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http\Microsoft.AspNetCore.Http.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.Net.Http.Headers\Microsoft.Net.Http.Headers.csproj" />
+    <ProjectReference Include="..\..\LibRpws2\LibRpws2\LibRpws2.csproj" />
+  </ItemGroup>
+
+  
+
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsNetShell.deps.json
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsNetShell.runtimeconfig.json
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsNetShell.runtimeconfig.dev.json
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsNetShell.dll
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsNetShell.pdb
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\bin\Debug\netcoreapp2.0\RpwsServerBridge.pdb
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.AssemblyInfo.cs
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.csproj.CopyComplete
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.dll
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.pdb
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsNetShell\obj\Debug\netcoreapp2.0\RpwsNetShell.csprojAssemblyReference.cache

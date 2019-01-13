@@ -1,0 +1,141 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Algolia.Search" Version="5.3.1" />
+    <PackageReference Include="DBreeze" Version="1.92.0" />
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.1.0" />
+    <PackageReference Include="FirebaseDatabase.net" Version="3.3.3" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="Google.Apis" Version="1.35.2" />
+    <PackageReference Include="NetJSON" Version="1.2.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0005" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0005" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.5.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.ThreadPool" Version="4.3.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AspCommon\src\Internal.AspNetCore.Analyzers\Internal.AspNetCore.Analyzers.csproj" />
+    <ProjectReference Include="..\..\AspCommon\src\Microsoft.AspNetCore.Analyzer.Testing\Microsoft.AspNetCore.Analyzer.Testing.csproj" />
+    <ProjectReference Include="..\..\AspCommon\src\Microsoft.AspNetCore.Testing\Microsoft.AspNetCore.Testing.csproj" />
+    <ProjectReference Include="..\..\AspCommon\src\Microsoft.Extensions.ObjectPool\Microsoft.Extensions.ObjectPool.csproj" />
+    <ProjectReference Include="..\..\AspCommon\src\Microsoft.Extensions.Primitives\Microsoft.Extensions.Primitives.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Authentication.Abstractions\Microsoft.AspNetCore.Authentication.Abstractions.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Authentication.Core\Microsoft.AspNetCore.Authentication.Core.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Abstractions\Microsoft.AspNetCore.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Extensions\Microsoft.AspNetCore.Http.Extensions.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http.Features\Microsoft.AspNetCore.Http.Features.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Http\Microsoft.AspNetCore.Http.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.Owin\Microsoft.AspNetCore.Owin.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.AspNetCore.WebUtilities\Microsoft.AspNetCore.WebUtilities.csproj" />
+    <ProjectReference Include="..\..\HttpAbstractions\src\Microsoft.Net.Http.Headers\Microsoft.Net.Http.Headers.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.Hosting.Abstractions\Microsoft.AspNetCore.Hosting.Abstractions.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.Hosting.Server.Abstractions\Microsoft.AspNetCore.Hosting.Server.Abstractions.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.Hosting.WindowsServices\Microsoft.AspNetCore.Hosting.WindowsServices.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.Hosting\Microsoft.AspNetCore.Hosting.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.Server.IntegrationTesting\Microsoft.AspNetCore.Server.IntegrationTesting.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.AspNetCore.TestHost\Microsoft.AspNetCore.TestHost.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.Extensions.Hosting.Abstractions\Microsoft.Extensions.Hosting.Abstractions.csproj" />
+    <ProjectReference Include="..\..\KestrelHosting\src\Microsoft.Extensions.Hosting\Microsoft.Extensions.Hosting.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Connections.Abstractions\Connections.Abstractions.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel.Core\Kestrel.Core.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel.Https\Kestrel.Https.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel.Transport.Abstractions\Kestrel.Transport.Abstractions.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel.Transport.Libuv\Kestrel.Transport.Libuv.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel.Transport.Sockets\Kestrel.Transport.Sockets.csproj" />
+    <ProjectReference Include="..\..\KestrelHttpServer\src\Kestrel\Kestrel.csproj" />
+    <ProjectReference Include="..\..\LibRpws2\LibRpws2\LibRpws2.csproj" />
+    <ProjectReference Include="..\..\LibRpws\LibRpws\LibRpws.csproj" />
+    <ProjectReference Include="..\..\RpwsServerBridge\RpwsServerBridge\RpwsServerBridge.csproj" />
+    <ProjectReference Include="..\RpwsOauth2\RpwsOauth2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Handlers\Errors\errorTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="rpws-dev.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rpws.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rpws_conf.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Appstore\HtmlTemplates\watchapp.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Appstore\HtmlTemplates\watchface.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\GetGoing\GetGoingPageTemplate_android.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\GetGoing\GetGoingPageTemplate_ios.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Login\LoginClientFinishTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Login\LoginClientTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Login\Oauth\template-signin.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\OauthV2\PermissionsTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\PublishApi\claim_template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Join\template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\AppList\AppListTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\AppstorePreviewFrame\template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\Claim\template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\CreateApp\CreateAppTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\DeleteApp\template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\ManageHome\template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Services\Publish\Pages\PbwManager\uploader.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Appstore\HtmlTemplates\" />
+  </ItemGroup>
+
+
+
+</Project>

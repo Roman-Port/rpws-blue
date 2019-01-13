@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <title>Claim App Frame</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <form action="https://%%HOST%%/v1/publishing/submit_claim/" method="post" enctype="application/x-www-form-urlencoded" style="font-family: 'Open Sans', sans-serif;">
+        <h4>Please type in the app ID(s)</h4>
+        <p>This can be found in the URL of the appstore <u>https://pebble-appstore.romanport.com/app/{app id}</u>. Separate app IDs with spaces.</p>
+        <input type="text" name="appId">
+
+        <h4>Please choose how you can claim to own this app</h4>
+        <input type="checkbox" name="claimType" value="0">I can offer source code where no public code is available.<br>
+        <input type="checkbox" name="claimType" value="1">I can verify I own the website the app has a link to.<br>
+        <input type="checkbox" name="claimType" value="2">I can verify I own a email address on a source page this app has a link to.<br>
+        <input type="checkbox" name="claimType" value="3">I can verify I own a support email.<br>
+        <input type="checkbox" name="claimType" value="4">I can verify I own an API endpoint that was developed for this app.<br>
+        <input type="checkbox" name="claimType" value="5">Other. Make sure to explain, in detail, how you can verify you own this app.<br>
+
+        <h4>Please elaborate on the claim method(s) you chose</h4>
+        <textarea name="claimText" style="width:100%; height:200px;"></textarea>
+
+        <h4>When ready, press the confirm button. It may take a few days to hear a reply</h4>
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>

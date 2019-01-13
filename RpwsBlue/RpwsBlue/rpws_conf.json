@@ -1,0 +1,7 @@
+{
+  "server_name": "\"Blue\" RPWS US-Central 1",
+  "db_ip": "68.63.223.8",
+  "db_port": 25565,
+  "listen_ip": "0.0.0.0",
+  "ssl_cert_path": "../cert.pfx"
+}

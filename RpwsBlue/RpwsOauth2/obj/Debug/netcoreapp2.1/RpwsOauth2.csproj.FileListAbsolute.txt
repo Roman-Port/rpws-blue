@@ -1,0 +1,9 @@
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\bin\Debug\netcoreapp2.1\RpwsOauth2.deps.json
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\bin\Debug\netcoreapp2.1\RpwsOauth2.dll
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.AssemblyInfo.cs
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\bin\Debug\netcoreapp2.1\RpwsOauth2.pdb
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.dll
+C:\Users\Roman\source\repos\rpws-blue\RpwsBlue\RpwsOauth2\obj\Debug\netcoreapp2.1\RpwsOauth2.pdb

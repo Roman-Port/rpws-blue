@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpwsServerBridge", "RpwsServerBridge\RpwsServerBridge.csproj", "{318380B2-C928-45AE-B4AD-6539812E070F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2E37AB64-B8D4-4943-8FE3-4A71DD6FF353}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{318380B2-C928-45AE-B4AD-6539812E070F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318380B2-C928-45AE-B4AD-6539812E070F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318380B2-C928-45AE-B4AD-6539812E070F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318380B2-C928-45AE-B4AD-6539812E070F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E37AB64-B8D4-4943-8FE3-4A71DD6FF353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E37AB64-B8D4-4943-8FE3-4A71DD6FF353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E37AB64-B8D4-4943-8FE3-4A71DD6FF353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E37AB64-B8D4-4943-8FE3-4A71DD6FF353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98C0BFDF-B26B-4B7B-AF6E-7ED44B9AD46E}
+	EndGlobalSection
+EndGlobal

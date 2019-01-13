@@ -1,0 +1,81 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Keep Pebble alive with RPWS">
+    <meta name="description" content="The ready, seamless, and free Pebble services replacement.">
+    <meta property="og:description" content="The ready, seamless, and free Pebble services replacement.">
+    <meta property="og:site_name" content="Get RPWS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#121420">
+
+    <title>RPWS // Get Started</title>
+    <link href="https://get-rpws.com/assets/landing.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://get-rpws.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://get-rpws.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://get-rpws.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://get-rpws.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://get-rpws.com/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="https://get-rpws.com/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="https://get-rpws.com/favicon/browserconfig.xml">
+
+    <style>
+        body {
+            background-image: linear-gradient(65deg,#121420 11%,#24273a 88%);
+            padding: 15px;
+            color: white;
+        }
+
+        a {
+            color: #4ce4ff;
+        }
+    </style>
+</head>
+<body class="text">
+    <div id="before">
+        <h1>Almost Ready</h1>
+        <p>
+            Welcome to RPWS, %%NAME%%! You should take a screenshot of your Pebble apps. You'll have to find them again after you switch.
+        </p>
+        <p>
+            When you click the button below, please follow these steps.
+        </p>
+        <ul>
+            <li>A confirmation dialog will appear from Safari. Consent to it.</li>
+            <li>The Pebble app will open and ask for confirmation. Consent to it.</li>
+            <li>On the main menu of the Pebble app, there will now be a glowing exclamation point in the upper right. Click on it, and click "Log in". You should see a "you made it" screen.</li>
+            <li>Click the button on the bottom of the "you made it" screen. Reconnect your Pebble as usual and enjoy RPWS!</li>
+        </ul>
+        <div class="med_btn" onclick="SwitchBtn();">Switch to RPWS</div>
+    </div>
+
+    <div id="after" style="display:none;">
+        <h1>Welcome to RPWS</h1>
+        <p>The Pebble app should've launched. Once again, make sure to follow these steps.</p>
+        <ul>
+            <li>A confirmation dialog will appear from Safari. Consent to it.</li>
+            <li>The Pebble app will open and ask for confirmation. Consent to it.</li>
+            <li>On the main menu of the Pebble app, there will now be a glowing exclamation point in the upper right. Click on it, and click "Log in". You should see a "you made it" screen.</li>
+            <li>Click the button on the bottom of the "you made it" screen. Reconnect your Pebble as usual and enjoy RPWS!</li>
+        </ul>
+        <p>Any problems? Take a look at our support page, or contact me directly <a href="https://get-rpws.com/support" target="_blank">here</a>.</p>
+        <h1>Thank You</h1>
+        <p>Seriously. Thank you for using our service. We're so happy to see you switch.</p>
+        <p>I run this service out of pocket off of a student budget. It would really mean a lot if you <a href="https://get-rpws.com/donate" target="_blank">donated</a> any amount.</p>
+    </div>
+</body>
+<script>
+    var url = "%%URL%%";
+
+    function SwitchBtn() {
+        //Switch to the after page.
+        document.getElementById('before').style.display = "none";
+        document.getElementById('after').style.display = "block";
+        //Apply the config!
+        window.open(url, '_blank');
+    }
+</script>
+</html>

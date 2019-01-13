@@ -1,0 +1,114 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPWS - Auth</title>
+
+    <style media="screen">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e9ebec;
+            font-family: Helvetica;
+        }
+
+        .msg {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            background: white;
+            width: 700px;
+            max-width: calc(100% - 64px);
+            margin: auto;
+            margin-top: 80px;
+            position:relative;
+            border-radius: 3px;
+            
+        }
+
+        h2 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .panel {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d9d9d9;
+            margin-bottom: 1.25em;
+            padding: 1.25em;
+            background: #f2f2f2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        @media (max-width:600px) {
+            .msg {
+                width:100%;
+                max-width:100%;
+                height:100%;
+                margin:0;
+            }
+
+            .bottom {
+                position:absolute;
+                bottom:0;
+                width:100%;
+            }
+        }
+
+        .permission {
+            padding:5px;
+            font-size:15px;
+            color:black;
+            position:relative;
+            height:39px;
+        }
+
+        .permission .img {
+            background-color: #404040;
+            border-radius: 100%;
+            position:absolute;
+            left:0;
+            top:0;
+            padding: 3px;
+            height: 29px;
+            width: 29px;
+        }
+
+        .permission .img img {
+            margin:5px;
+            height:19px;
+            width:19px;
+        }
+
+        .permission .text {
+            left:45px;
+            right:0px;
+            position:absolute;
+            top:9px;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg">
+        <div style="padding-top:32px; padding-left: 32px;padding-right:32px;">
+            <h2>Sign in with RPWS</h2>
+            <p>You are about to grant "%NAME%" access to the following permissions on your RPWS account.</p>
+
+            <div>
+                %PERMS%
+
+            </div>
+        </div>
+        <div style="background-color:#404040; margin-top:20px; padding-top:15px; padding-bottom:15px;" class="bottom">
+            <a href="%SIGNIN%"><img src="https://get-rpws.com/assets/btn_google_signin_light_normal_web.png" class="signin" style="margin:auto; display:block;"></a>
+        </div>
+
+        
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+C:\Users\Roman\source\repos\LibRpws\LibRpws\bin\Debug\netstandard2.0\LibRpws.deps.json
+C:\Users\Roman\source\repos\LibRpws\LibRpws\bin\Debug\netstandard2.0\LibRpws.dll
+C:\Users\Roman\source\repos\LibRpws\LibRpws\bin\Debug\netstandard2.0\LibRpws.pdb
+C:\Users\Roman\source\repos\LibRpws\LibRpws\bin\Debug\netstandard2.0\LibRpwsDatabase.dll
+C:\Users\Roman\source\repos\LibRpws\LibRpws\bin\Debug\netstandard2.0\LibRpwsDatabase.pdb
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.AssemblyInfo.cs
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.csproj.CopyComplete
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.dll
+C:\Users\Roman\source\repos\LibRpws\LibRpws\obj\Debug\netstandard2.0\LibRpws.pdb

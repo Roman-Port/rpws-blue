@@ -1,0 +1,19 @@
+<div class="app_container" onclick="ShowAppInfo('%%ID%%');">
+	<div class="app_main_body">
+		<div class="app_img" style="position: relative;">
+			<div class="app_screenshot_listing" style="position: relative;">
+				<div class="gray_loader_frame" id="loader_%%RAND%%_2"><div class="gray_loader"></div></div>
+				<img src="%%SCREENSHOT%%" class="app_screenshot_listing" style="z-index: 0; position:absolute;" onload="HideImgLoader('loader_%%RAND%%_2')">
+			</div>
+		</div>
+		<div class="app_text_area">
+			<div class="new_app_icon">
+				<div id="loader_%%RAND%%_1" class="gray_loader_frame"><div class="gray_loader"></div></div>
+				<img class="new_app_icon" src="%%ICON%%" onload="HideImgLoader('loader_%%RAND%%_1')">
+			</div>
+			<div class="new_app_title">%%NAME%%</div>
+			<div class="new_app_author">%%AUTHOR%%</div>
+			<div class="new_app_description">%%DESCRIPTION%%<div class="new_app_description_fade"></div></div>
+		</div>
+	</div>
+</div>

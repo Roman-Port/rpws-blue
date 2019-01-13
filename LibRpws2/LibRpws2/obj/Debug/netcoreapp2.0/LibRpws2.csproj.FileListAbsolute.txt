@@ -1,0 +1,12 @@
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.AssemblyInfo.cs
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\bin\Debug\netcoreapp2.0\LibRpws2.deps.json
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\bin\Debug\netcoreapp2.0\LibRpws2.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\bin\Debug\netcoreapp2.0\LibRpws2.pdb
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\bin\Debug\netcoreapp2.0\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\bin\Debug\netcoreapp2.0\RpwsServerBridge.pdb
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.csproj.CopyComplete
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpws2\obj\Debug\netcoreapp2.0\LibRpws2.pdb

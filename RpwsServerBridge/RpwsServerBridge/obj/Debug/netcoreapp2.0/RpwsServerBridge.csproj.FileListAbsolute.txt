@@ -1,0 +1,9 @@
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\bin\Debug\netcoreapp2.0\RpwsServerBridge.deps.json
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\bin\Debug\netcoreapp2.0\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.AssemblyInfo.cs
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\bin\Debug\netcoreapp2.0\RpwsServerBridge.pdb
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\RpwsServerBridge\RpwsServerBridge\obj\Debug\netcoreapp2.0\RpwsServerBridge.pdb

@@ -1,0 +1,14 @@
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\Tests.deps.json
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\Tests.runtimeconfig.json
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\Tests.runtimeconfig.dev.json
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\Tests.dll
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\Tests.pdb
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\bin\Debug\netcoreapp2.1\RpwsServerBridge.pdb
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.AssemblyInfo.cs
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.csproj.CopyComplete
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.dll
+C:\Users\Roman\source\repos\RpwsServerBridge\Tests\obj\Debug\netcoreapp2.1\Tests.pdb

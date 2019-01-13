@@ -1,0 +1,16 @@
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpwsTests.deps.json
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpwsTests.runtimeconfig.json
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpwsTests.runtimeconfig.dev.json
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpwsTests.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpws2.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\RpwsServerBridge.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpws2.pdb
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\RpwsServerBridge.pdb
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.AssemblyInfo.cs
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.csproj.CopyComplete
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\bin\Debug\netcoreapp2.1\LibRpwsTests.pdb
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.dll
+C:\Users\Roman\source\repos\LibRpws2\LibRpwsTests\obj\Debug\netcoreapp2.1\LibRpwsTests.pdb
