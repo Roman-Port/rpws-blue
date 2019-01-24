@@ -100,6 +100,8 @@ namespace LibRpws2.Entities
 
         public Dictionary<string, PebbleApp_IconImg> icon_image { get; set; }
 
+        public List<AppstoreComment> comments { get; set; }
+
         /* New, just for table */
 
         public TableMeta table_meta { get; set; }
@@ -553,6 +555,8 @@ namespace LibRpws2.Entities
         public string remove_flag { get; set; }
 
         public string share { get; set; }
+
+        public string add_rpws_comment { get; set; }
     }
 
     

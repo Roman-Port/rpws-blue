@@ -192,5 +192,23 @@ namespace RpwsBlue
             //Commit
             t.Commit();
         }
+
+        public static bool AddCommentToAppId(AppstoreComment comment, string appId)
+        {
+            //Grab the app
+            AppstoreApp app = GetAppById(appId);
+
+            if (app == null)
+                return false;
+
+            //Add comment
+            if (app.comments == null)
+                app.comments = new List<AppstoreComment>();
+            app.comments.Add(comment);
+
+            //Save
+            UpdateAppById(app, null);
+            return true;
+        }
     }
 }

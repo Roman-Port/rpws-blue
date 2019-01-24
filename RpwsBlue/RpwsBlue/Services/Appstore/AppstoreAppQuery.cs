@@ -35,6 +35,8 @@ namespace RpwsBlue.Services.Appstore
                 AppServices.AppVotes.OnRequest(e, ee, app, 1);
             else if (action == "downvote")
                 AppServices.AppVotes.OnRequest(e, ee, app, 0);
+            else if (action == "add_comment")
+                AppServices.AppComments.OnAddComment(e, ee, app);
             else
                 throw new RpwsStandardHttpException($"Action '{action}' did not exist.");
         }

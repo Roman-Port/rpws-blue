@@ -28,6 +28,8 @@ namespace LibRpws
         public Dictionary<string, Dictionary<string, string>> secure_creds; //Creds for outside resources, such as Firebase.
 
         public Dictionary<string, LibRpwsConfigFile_AppstoreFrontpage> appstore_frontpage; //Appstore, by type
+
+        public Dictionary<string, string> appstore_frontpage_files; //Paths to files with the split version of the above var
     }
 
     /* Appstore */

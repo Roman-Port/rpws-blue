@@ -25,6 +25,7 @@ namespace RpwsBlue.Entities
         public PebbleApp_ListImg list_image { get; set; }
         public string published_date { get; set; }
         public PebbleApp_ScreenshotImg[] screenshot_images { get; set; }
+        public List<AppstoreComment> comments { get; set; }
         public string source { get; set; }
         public string title { get; set; }
         public string type { get; set; }
@@ -48,6 +49,9 @@ namespace RpwsBlue.Entities
             category_color = a.category_color;
             changelog = a.changelog;
             companions = a.companions;
+            comments = a.comments;
+            if (comments == null)
+                comments = new List<AppstoreComment>();
             created_at = a.created_at;
             description = ProcessSafeString(a.description);
             developer_id = a.developer_id;
@@ -84,7 +88,8 @@ namespace RpwsBlue.Entities
                 remove = $"https://{Program.config.public_host}/v1/locker/{id}/",
                 remove_flag = $"https://{Program.config.public_host}/v2/appstore/app/{id}/remove_flag/",
                 remove_heart = $"https://{Program.config.public_host}/v2/appstore/app/{id}/downvote/",
-                share = $"https://app.get-rpws.com/{id}"
+                share = $"https://app.get-rpws.com/{id}",
+                add_rpws_comment = $"https://{Program.config.public_host}/v2/appstore/app/{id}/add_comment/",
             };
         }
     }

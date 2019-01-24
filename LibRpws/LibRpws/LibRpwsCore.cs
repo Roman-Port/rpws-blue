@@ -28,9 +28,19 @@ namespace LibRpws
         {
             //Load config.
             config = JsonConvert.DeserializeObject<LibRpwsConfigFile>(File.ReadAllText(configPathname));
+            if (config.appstore_frontpage == null)
+                config.appstore_frontpage = new Dictionary<string, LibRpwsConfigFile_AppstoreFrontpage>(); 
+            foreach (var k in config.appstore_frontpage_files)
+            {
+                //Load files
+                config.appstore_frontpage.Add(k.Key, JsonConvert.DeserializeObject<LibRpwsConfigFile_AppstoreFrontpage>(File.ReadAllText(k.Value)));
+            }
+
+            //Open log stream
             loggingStream = File.Open(config.loggingFile, System.IO.FileMode.OpenOrCreate);
             loggingStream.Position = loggingStream.Length;
             Log("Loaded config from "+configPathname,null, RpwsLogLevel.Standard);
+
             //Load database.
             lite_database = new LiteDatabase(config.database_file);
             Console.Title = config.server_name;
