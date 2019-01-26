@@ -30,7 +30,7 @@ namespace RpwsBlue
 
     class Program
     {
-        public const string SERVER_VERISON = "01122019-a";
+        public const string SERVER_VERISON = "01-23-2019-a";
 
         public static HttpService[] services;
 
@@ -89,6 +89,7 @@ namespace RpwsBlue
                 CreateService(Services.Trends.ServiceAppstoreClickTrends.PutTrends, "/v1/trends/app_click/put", RpwsServiceId.trendsPut, false),
                 CreateService(Services.Trends.ServiceAppstoreClickTrends.GetTrends, "/v1/trends/app_click/get", RpwsServiceId.trendsGet, false, false),
                 CreateService(Services.OauthV2.OauthV2.BeginFrontend, "/v1/oauth2", RpwsServiceId.Oauth2Step1, false, false),
+                CreateService(Services.OauthV2.OauthV2.CreateFakeUserEndpoint, "/v1/oauth2/create_fake_user", RpwsServiceId.Ouath2FakeUser, false, false),
                 CreateService(Services.OauthV2.OauthV2.Step2, "/v1/oauth2/step2", RpwsServiceId.Oauth2Step2, false, false),
                 CreateService(Services.OauthV2.OauthV2.FinishGrant, "/v1/oauth2/step3", RpwsServiceId.Oauth2Step3, false, false),
                 CreateService(Services.Locker.LockerService.RpwsOnRequest, "/v1/locker/", RpwsServiceId.locker, false, false),

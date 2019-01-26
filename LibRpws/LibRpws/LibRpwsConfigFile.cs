@@ -23,13 +23,20 @@ namespace LibRpws
 
         public string appstore_database_location; //Path to the appstore DB
 
-        public int environment; //0: Production, 1: Debug
+        public RPWS_Enviornment environment; 
 
         public Dictionary<string, Dictionary<string, string>> secure_creds; //Creds for outside resources, such as Firebase.
 
         public Dictionary<string, LibRpwsConfigFile_AppstoreFrontpage> appstore_frontpage; //Appstore, by type
 
         public Dictionary<string, string> appstore_frontpage_files; //Paths to files with the split version of the above var
+    }
+
+    public enum RPWS_Enviornment
+    {
+        Production = 0, //blue
+        Alpha = 1, //blue-dev
+        Beta = 2 //Something someday
     }
 
     /* Appstore */

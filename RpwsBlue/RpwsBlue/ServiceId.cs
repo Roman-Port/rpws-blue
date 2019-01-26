@@ -30,6 +30,7 @@ namespace RpwsBlue
         trendsPut,
         trendsGet,
         Oauth2Step1,
+        Ouath2FakeUser,
         Oauth2Step2,
         Oauth2Step3,
 

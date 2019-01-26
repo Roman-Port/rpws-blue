@@ -44,6 +44,28 @@ namespace LibRpws.Users
             }
         }
 
+        /// <summary>
+        /// Creates a one-time RPWS user. This is used for testing and will expire if you log out. This also generates an access token.
+        /// </summary>
+        /// <returns>Acount access token</returns>
+        public static E_RPWS_User CreateOneTimeUser()
+        {
+            //Validate enviornment
+            if (LibRpwsCore.config.environment != RPWS_Enviornment.Alpha)
+                throw new Exception($"Cannot create test user because the server enviornment is not RPWS_Enviornment.{RPWS_Enviornment.Alpha.ToString()}.");
+            
+            //First, create the user using fake creds
+            string cred = LibRpwsCore.GenerateRandomString(8);
+            E_RPWS_User u = CreateNewUser(cred, cred, $"One-Time User {cred}");
+
+            return u;
+
+            //Return an access token for this user
+            /*return Auth.LibRpwsAuth.CreateModernAccessToken(u, new List<E_RPWS_Token_Permissions> {
+                E_RPWS_Token_Permissions.All
+            });*/
+        }
+
         public static E_RPWS_User CreateNewUser(string email, string googleId, string name)
         {
             //Grab the collection.

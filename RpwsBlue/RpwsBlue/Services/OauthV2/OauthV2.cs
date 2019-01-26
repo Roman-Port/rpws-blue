@@ -90,6 +90,52 @@ namespace RpwsBlue.Services.OauthV2
         }
 
         /// <summary>
+        /// Used only by the development server, this allows a developer to create a "one-time" user for testing. This is the same as a standard user, but can be created without a unique Google account.
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="ee"></param>
+        public static void CreateFakeUserEndpoint(Microsoft.AspNetCore.Http.HttpContext context, HttpSession ee)
+        {
+            //First, get the state to find our session.
+            AuthState session = sessions.Find(x => x.googleStateToken == ee.GET["state"]);
+            if (session == null)
+                throw new Exception("Failed to find the session. It might've expired. Please go back and try again.");
+            sessions.Remove(session);
+
+            //Grab a one time user
+            session.user = LibRpwsUsers.CreateOneTimeUser();
+
+            FinishStep2(context, ee, session);
+        }
+
+        /// <summary>
+        /// Finish the step 2 auth and redirect to step 3.
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="ee"></param>
+        static void FinishStep2(Microsoft.AspNetCore.Http.HttpContext context, HttpSession ee, AuthState session)
+        {
+            //Now, we'll redirect to the final oauth endpoint. The end server will request us for information.
+            //To do this, generate a one-time token to be used by the end server.
+            string step3token = LibRpwsCore.GenerateRandomString(64);
+            while (sessions.Find(x => x.step3Token == step3token) != null)
+                step3token = LibRpwsCore.GenerateRandomString(64);
+
+            //Save and redirect back.
+            session.step3Token = step3token;
+            sessions.Add(session);
+
+            string endpoint = $"https://{LibRpwsCore.config.public_host}/v1/oauth2/step3/?grant={step3token}";
+
+            char sepChar = '?';
+            if (session.returnUrl.Contains('?'))
+                sepChar = '&';
+            string redir = $"{session.returnUrl}{sepChar}endpoint={System.Web.HttpUtility.UrlEncode(endpoint)}&grant_token={step3token}&environment={Program.config.environment.ToString()}";
+            context.Response.Headers.Add("Location", redir);
+            Program.QuickWriteToDoc(context, $"You should've been redirected to {redir}.", "text/html", 302);
+        }
+
+        /// <summary>
         /// First function that starts everything
         /// </summary>
         /// <param name="context"></param>
@@ -112,6 +158,7 @@ namespace RpwsBlue.Services.OauthV2
             //Now, generate the URL to redirect to.
             string endPath = $"https://{LibRpwsCore.config.public_host}/v1/oauth2/step2/";
             string redir = $"https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile&access_type=offline&include_granted_scopes=true&state={id}&redirect_uri={System.Web.HttpUtility.UrlEncode(endPath)}&response_type=code&client_id={GOOGLE_CLIENT_ID}";
+            string fakeredir = $"https://{Program.config.public_host}/v1/oauth2/create_fake_user/?state={id}";
 
             //Get the requested permissions.
             List<E_RPWS_Token_Permissions> perms = new List<E_RPWS_Token_Permissions>();
@@ -152,7 +199,10 @@ namespace RpwsBlue.Services.OauthV2
                 foreach (var perm in perms)
                     permsString += $"<div class=\"permission\"> <div class=\"img\"><img src=\"https://romanport.com/static/icons/{permissionsText[perm].img}.svg\" /></div> <div class=\"text\">{permissionsText[perm].name}</div> </div>";
 
-                string t = TemplateManager.GetTemplate("Services/OauthV2/PermissionsTemplate.html", new string[] { "%PERMS%", "%SIGNIN%", "%NAME%" }, new string[] { permsString, redir, System.Web.HttpUtility.HtmlEncode(ee.GET["name"]) });
+                string SIGNIN_ONETIME_DISPLAY = "none";
+                if (Program.config.environment == RPWS_Enviornment.Alpha)
+                    SIGNIN_ONETIME_DISPLAY = "block";
+                string t = TemplateManager.GetTemplate("Services/OauthV2/PermissionsTemplate.html", new string[] { "%PERMS%", "%SIGNIN%", "%NAME%", "%SIGNIN_ONETIME%", "%SIGNIN_ONETIME_DISPLAY%" }, new string[] { permsString, redir, System.Web.HttpUtility.HtmlEncode(ee.GET["name"]), fakeredir, SIGNIN_ONETIME_DISPLAY });
 
                 Program.QuickWriteToDoc(context, t);
             }
@@ -236,24 +286,7 @@ namespace RpwsBlue.Services.OauthV2
             //We'll wait until the next step to create a token.
             session.user = user;
 
-            //Now, we'll redirect to the final oauth endpoint. The end server will request us for information.
-            //To do this, generate a one-time token to be used by the end server.
-            string step3token = LibRpwsCore.GenerateRandomString(64);
-            while (sessions.Find(x => x.step3Token == step3token) != null)
-                step3token = LibRpwsCore.GenerateRandomString(64);
-
-            //Save and redirect back.
-            session.step3Token = step3token;
-            sessions.Add(session);
-
-            string endpoint = $"https://{LibRpwsCore.config.public_host}/v1/oauth2/step3/?grant={step3token}";
-
-            char sepChar = '?';
-            if (session.returnUrl.Contains('?'))
-                sepChar = '&';
-            string redir = $"{session.returnUrl}{sepChar}endpoint={System.Web.HttpUtility.UrlEncode(endpoint)}&grant_token={step3token}&environment={Program.config.environment.ToString()}";
-            context.Response.Headers.Add("Location", redir);
-            Program.QuickWriteToDoc(context, $"You should've been redirected to {redir}.", "text/html", 302);
+            FinishStep2(context, ee, session);
         }
 
         class GoogleReplyData
