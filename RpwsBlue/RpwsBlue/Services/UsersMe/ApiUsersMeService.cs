@@ -15,7 +15,15 @@ namespace RpwsBlue.Services.UsersMe
             //Generate the reply.
             UsersMeReply r = new UsersMeReply();
             UsersMeReplyUser u = new UsersMeReplyUser();
-            u.added_ids = ee.user.lockerInstalled;
+
+            //Fetch new locker apps
+            var installed_apps = Services.Locker.LockerTool.GetInstalledApps(ee.user.uuid);
+            List<string> installed_apps_list = new List<string>();
+            foreach(var a in installed_apps)
+            {
+                installed_apps_list.Add(a.app_id);
+            }
+            u.added_ids = installed_apps_list.ToArray();
             u.applications = new string[] { };
             u.flagged_ids = new string[] { };
             u.href = "https://"+LibRpwsCore.config.public_host+"/v1/usersme/";

@@ -35,7 +35,8 @@ namespace RpwsBlue
                 title = http_top,
                 retryable = retryable,
                 message = http_message,
-                SERVER_VERSION = Program.SERVER_VERISON
+                SERVER_VERSION = Program.SERVER_VERISON,
+                SERVER_DATE_CODE = Program.SERVER_DATE_CODE
             });
         }
 
@@ -48,5 +49,6 @@ namespace RpwsBlue
         public bool retryable;
         public string title;
         public string SERVER_VERSION;
+        public string SERVER_DATE_CODE;
     }
 }

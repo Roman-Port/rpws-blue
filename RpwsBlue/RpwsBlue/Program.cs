@@ -30,7 +30,8 @@ namespace RpwsBlue
 
     class Program
     {
-        public const string SERVER_VERISON = "01-23-2019-a";
+        public const string SERVER_VERISON = "2.1.0";
+        public const string SERVER_DATE_CODE = "01-26-2019-a";
 
         public static HttpService[] services;
 
@@ -242,6 +243,7 @@ namespace RpwsBlue
                         }
                         //Continue
                         LogToDisk(e, s, $"Served request to {ser.id.ToString()}.", E_RPWS_StatisticObject_Status.Message);
+                        //RpwsLogs.LogEntireRequest(e, s);
                         ser.code(e, s);
                         return null;
                     }
